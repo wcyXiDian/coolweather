@@ -1,11 +1,9 @@
 package com.example.jock.coolweather;
 
-import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,9 +31,8 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 /**
- * Created by Jock on 2017/8/10.
+ * A simple {@link Fragment} subclass.
  */
-
 public class ChooseAreaFragment extends Fragment {
 
     public static final int LEVEL_PROVINCE = 0;
@@ -54,7 +51,6 @@ public class ChooseAreaFragment extends Fragment {
     private City selectedCity;
     private int currentLevel;
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.choose_area, container, false);
@@ -201,7 +197,6 @@ public class ChooseAreaFragment extends Fragment {
             @Override
             public void onFailure(Call call, IOException e) {
                 getActivity().runOnUiThread(new Runnable() {
-                    @RequiresApi(api = Build.VERSION_CODES.M)
                     @Override
                     public void run() {
                         closeProgressDialog();

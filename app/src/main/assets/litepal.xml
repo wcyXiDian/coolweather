@@ -4,9 +4,9 @@
     <version value="1" />
 
     <list>
-        <mapping class="com.example.jock.coolweather.android.db.Province" />
-        <mapping class="com.example.jock.coolweather.android.db.City" />
-        <mapping class="com.example.jock.coolweather.android.db.County" />
+        <mapping class="com.example.jock.coolweather.db.Province" />
+        <mapping class="com.example.jock.coolweather.db.City" />
+        <mapping class="com.example.jock.coolweather.db.County" />
     </list>
 
 </litepal>
